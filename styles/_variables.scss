@@ -1,0 +1,54 @@
+$primaryBtn: rgb(146, 146, 146);
+$textColor: rgb(243, 240, 240);
+$backgroundColor: rgb(31, 30, 30);
+$borderStyle:  solid 1px rgb(53, 53, 53);
+$logoTitle: 'Gugi', cursive;
+$subTitle: 'Lalezar', cursive;
+$hoverColor: rgb(82, 81, 81);
+@import url('https://fonts.googleapis.com/css?family=Gugi');
+@import url('https://fonts.googleapis.com/css?family=Lalezar');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+SC');
+
+@mixin flexCenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin carousel {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(20px, 150px));
+    justify-content: center;
+}
+
+@mixin logoTitle {
+    text-transform: uppercase;
+    font-family: $logoTitle;
+    font-weight: 100;
+    font-size: 1.8em;
+    width: 15%;
+}
+
+@mixin subTitle{
+    font-family: $subTitle;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 1.9em;
+}
+
+@mixin inputReset {
+    background: #313030;
+    border: none;
+    border-bottom: solid 1px #414040;
+    outline: none;
+    color: $textColor;
+}
+
+@mixin btnReset {
+    cursor: pointer;
+    background-color: #3b3a3a;
+    border: none;
+    outline: none;
+    color: $textColor;
+}
